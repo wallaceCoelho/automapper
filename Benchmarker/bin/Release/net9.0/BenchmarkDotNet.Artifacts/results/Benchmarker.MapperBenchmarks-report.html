@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Benchmarker.MapperBenchmarks-20250404-200215</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.5126/23H2/2023Update/SunValley3)
+Intel Core i3-7020U CPU 2.30GHz (Kaby Lake), 1 CPU, 4 logical and 2 physical cores
+.NET SDK 9.0.100
+  [Host]     : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+  DefaultJob : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method           </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>KbrMapperSimple</td><td>930.9 ns</td><td>69.66 ns</td><td>205.4 ns</td><td>959.2 ns</td><td>0.3414</td><td>536 B</td>
+</tr><tr><td>CachedMapperSimple</td><td>1,265.9 ns</td><td>109.31 ns</td><td>322.3 ns</td><td>1,170.7 ns</td><td>0.2232</td><td>352 B</td>
+</tr><tr><td>KbrMapperComplex</td><td>675.7 ns</td><td>41.63 ns</td><td>121.4 ns</td><td>643.6 ns</td><td>0.3414</td><td>536 B</td>
+</tr><tr><td>CachedMapperComplex</td><td>2,195.0 ns</td><td>113.16 ns</td><td>328.3 ns</td><td>2,155.8 ns</td><td>0.6294</td><td>992 B</td>
+</tr><tr><td>KbrMapperListComplex</td><td>1,699.6 ns</td><td>145.30 ns</td><td>428.4 ns</td><td>1,609.9 ns</td><td>0.7744</td><td>1216 B</td>
+</tr><tr><td>CachedMapperListComplex</td><td>4,702.7 ns</td><td>343.31 ns</td><td>1,012.3 ns</td><td>4,230.5 ns</td><td>1.3962</td><td>2192 B</td>
+</tr><tr><td>KbrMapperListSimple</td><td>1,269.5 ns</td><td>48.26 ns</td><td>134.5 ns</td><td>1,245.1 ns</td><td>0.7744</td><td>1216 B</td>
+</tr><tr><td>CachedMapperListSimple</td><td>2,059.8 ns</td><td>69.34 ns</td><td>191.0 ns</td><td>2,024.0 ns</td><td>0.5798</td><td>912 B</td>
+</tr></tbody></table>
+</body>
+</html>

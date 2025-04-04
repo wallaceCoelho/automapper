@@ -1,0 +1,11 @@
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\bin\Release\net9.0\AutoMapper.deps.json
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\bin\Release\net9.0\AutoMapper.dll
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\bin\Release\net9.0\AutoMapper.pdb
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.AssemblyInfoInputs.cache
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.AssemblyInfo.cs
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.csproj.CoreCompileInputs.cache
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.dll
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\refint\AutoMapper.dll
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\AutoMapper.pdb
+C:\Users\Wallace\Desktop\Benchmarker\AutoMapper\obj\Release\net9.0\ref\AutoMapper.dll
