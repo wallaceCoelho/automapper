@@ -35,12 +35,7 @@ dotnet run -c Release
 # 📌 Exemplos de Uso
 
 ```csharp
-// Recomenda-se injetar no conteiner DI da aplicação e utilziar-lo ia injeção de dependência.
-// Opções de escopo: Scoped, Transient, Singleton
-
-builder.Services.AddAutoMapper() //Scoped
-builder.Services.AddAutoMapperSingleton() //Singleton
-builder.Services.AddAutoMapperTransient() //Transient
+using WMapper.Interfaces;
 
 class Servico 
 {
@@ -74,10 +69,23 @@ class Servico
 
 - .NET 6.0 ou superior
 
-# 📦 NuGet (futuramente)
+# 📦 NuGet
 
 ```bash
-dotnet add package AutoMapper.Generic
+dotnet add package WMapper.Generic
+```
+
+```csharp
+// Recomenda-se injetar no conteiner DI da aplicação e utilziar-lo ia injeção de dependência.
+// Opções de escopo: Scoped, Transient, Singleton
+using WMapper;
+
+builder.Services.AddAutoMapper() //Scoped
+builder.Services.AddAutoMapperSingleton() //Singleton
+builder.Services.AddAutoMapperTransient() //Transient
+
+// Você também pode instanciar manualmente a classe concreta:
+var mapper = new Mapper();
 ```
 
 # 📝 Licença
