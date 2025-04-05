@@ -33,7 +33,7 @@ cd Benchmarker
 dotnet run -c Release
 ```
 
-# 📌 Benchmarks
+# 📌 Exemplo de Uso
 
 ```csharp
 // Recomenda-se injetar a interface no construtor da classe
