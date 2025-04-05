@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6wURQn0htco=",
+  "dgSpecHash": "PKeYq6H1b38=",
   "success": true,
   "projectFilePath": "C:\\Users\\Wallace\\Desktop\\Benchmarker\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wallace\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
+    "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.11.1\\microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
     "C:\\Users\\Wallace\\.nuget\\packages\\microsoft.testplatform.testhost\\17.11.1\\microsoft.testplatform.testhost.17.11.1.nupkg.sha512",

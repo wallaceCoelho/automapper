@@ -1,4 +1,8 @@
-.idea/
-bin/
-obj/
+/.idea
+/AutoMapper/obj
+/AutoMapper/bin
+/Benchmarker/obj
+/Benchmarker/bin
+/Tests/obj
+/Tests/bin
 

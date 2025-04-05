@@ -10,13 +10,16 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("AutoMapper")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Coelho.Devs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute(("AutoMapper manual de alta performance com cache e com suporte a objetos complexos" +
+    "."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a6401e7f60dd7679c32be03e14ad712d2003399")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoMapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoMapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/wallaceCoelho/automapper")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
