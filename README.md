@@ -1,5 +1,4 @@
-# 🧠 AutoMapper Manual (.NET)
-
+# 🧠 AutoMapper Genérico
 Este projeto é uma **biblioteca de mapeamento objeto-para-objeto** desenvolvida em .NET, com o objetivo de realizar cópias profundas (**deep copy**) entre objetos complexos — sem depender de bibliotecas de terceiros como AutoMapper.
 
 ## ✨ Funcionalidades
@@ -33,25 +32,42 @@ cd Benchmarker
 dotnet run -c Release
 ```
 
-# 📌 Exemplo de Uso
+# 📌 Exemplos de Uso
 
 ```csharp
-// Recomenda-se injetar a interface no construtor da classe
-private readonly IMapper _mapper = new Mapper();
+// Recomenda-se injetar no conteiner DI da aplicação e utilziar-lo ia injeção de dependência.
+// Opções de escopo: Scoped, Transient, Singleton
 
-// Mapeando para novo objeto
-var dto = _mapper.Map<Person, PersonDto>(pessoa);
+builder.Services.AddAutoMapper() //Scoped
+builder.Services.AddAutoMapperSingleton() //Singleton
+builder.Services.AddAutoMapperTransient() //Transient
 
-// Atualizando objeto existente
-_mapper.Map(pessoa, pessoaDtoExistente);
+class Servico 
+{
+    private readonly IMapper _mapper;
 
-// Mapeando lista
-var listaPessoas = new List<listaDto>();
-List<listaDto> result = _mapper.Map<Person, PersonDto>(listaPessoas);
+    public Servico(IMapper mapper)
+    {
+        _mapper = mapper;
+    }
 
-// Mapeando lista de listas
-var listaPessoas = new List<List<listaDto>>();
-List<List<listaDto>> result = _mapper.Map<Person, PersonDto>(listaPessoas);
+    public void Handler()
+    {
+        // Mapeando para novo objeto
+        var dto = _mapper.Map<Person, PersonDto>(pessoa);
+
+        // Atualizando objeto existente
+        _mapper.Map(pessoa, pessoaDtoExistente);
+
+        // Mapeando lista
+        var listaPessoas = new List<listaDto>();
+        List<listaDto> result = _mapper.Map<Person, PersonDto>(listaPessoas);
+
+        // Mapeando lista de listas
+        var listaPessoas = new List<List<listaDto>>();
+        List<List<listaDto>> result = _mapper.Map<Person, PersonDto>(listaPessoas);
+    }
+}
 ```
 
 # ✅ Requisitos
@@ -61,7 +77,7 @@ List<List<listaDto>> result = _mapper.Map<Person, PersonDto>(listaPessoas);
 # 📦 NuGet (futuramente)
 
 ```bash
-dotnet add package AutoMapper.Manual
+dotnet add package AutoMapper.Generic
 ```
 
 # 📝 Licença

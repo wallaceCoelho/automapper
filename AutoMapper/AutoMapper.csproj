@@ -5,11 +5,11 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageId>AutoMapper.WallaceCoelho</PackageId>
+        <PackageId>AutoMapper.Generic</PackageId>
         <Version>1.0.0</Version>
         <Authors>Wallace Coelho</Authors>
         <Company>Coelho.Devs</Company>
-        <Description>AutoMapper manual de alta performance com cache e com suporte a objetos complexos.</Description>
+        <Description>AutoMapper genérico de alta performance com cache e com suporte a objetos complexos.</Description>
         <PackageTags>mapper automapper performance csharp</PackageTags>
         <RepositoryUrl>https://github.com/wallaceCoelho/automapper</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
