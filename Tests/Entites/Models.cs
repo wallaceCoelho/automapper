@@ -1,4 +1,4 @@
-using AutoMapper.Annotations;
+using AutoMapper.Attributes;
 
 namespace Tests.Entites;
 

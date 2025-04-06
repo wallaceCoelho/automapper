@@ -1,6 +1,8 @@
+using AutoMapper.Core;
+
 namespace AutoMapper.Mappers;
 
-public class HandleMapper : BaseMapper
+public class MappingHandler : MapperEngine
 {
     public List<TDestination> Map<TSource, TDestination>(List<TSource> sourceList) where TDestination : new()
         => sourceList.Select(Map<TSource, TDestination>).ToList();

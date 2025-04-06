@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Concurrent;
 using System.Linq.Expressions;
 using System.Reflection;
-using AutoMapper.Annotations;
+using AutoMapper.Attributes;
 using AutoMapper.Models;
 
-namespace AutoMapper.Mappers;
+namespace AutoMapper.Core;
 
-public abstract class BaseMapper
+public abstract class MapperEngine
 {
     private static readonly ConcurrentDictionary<Type, Dictionary<string, PropertyAccessor>> AccessorCache = new();
     private static readonly ConcurrentDictionary<Type, Func<object>> ConstructorCache = new();
